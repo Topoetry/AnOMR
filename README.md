@@ -1,4 +1,4 @@
 # AnOMR
 Another Optimus Manager for Runit
 
-Partially unfinished, but functionnal set of shell scripts for managing an optimus laptop (the pure nvidia/discrete gpu is quite broken, I'll certainely fix in a while since I do not use it for now). (And the switch from integrated to discrete gpu needs to relaunch DM from tty)
+Partially unfinished, but functionnal set of shell scripts for managing an optimus laptop (the pure nvidia/discrete gpu is quite broken, I'll certainely fix in a while since I do not use it for now). (And the switch option needs to relaunch DM from tty)
