@@ -1,0 +1,34 @@
+#!/bin/sh
+
+case $1 in
+	switch)
+		case $2 in
+			hybrid)
+				cp -f /etc/AnOMR/86-AnOMR.confhy /etc/X11/xorg.conf.d/86-AnOMR.conf
+				echo "hybrid" > /etc/AnOMR/state
+				sv down lightdm; sv down elogind ;modprobe nvidia-drm;sv up elogind; sv up lightdm
+				;;
+			intel)
+				cp -f /etc/AnOMR/86-AnOMR.confin /etc/X11/xorg.conf.d/86-AnOMR.conf
+				echo "intel" > /etc/AnOMR/state
+				sv down lightdm;sv down elogind; modprobe -r nvidia-drm;sv up elogind;sv up lightdm
+				;;
+			nvidia)
+				cp -f /etc/AnOMR/86-AnOMR.confnv /etc/X11/xorg.conf.d/86-AnOMR.conf
+				echo "nvidia" > /etc/AnOMR/state
+				sv down lightdm; modprobe nvidia-drm; sv up lightdm
+				;;
+			*)
+				echo "WTF ?"
+				;;
+			esac
+			;;
+	show)
+		echo $(cat /etc/AnOMR/state)
+		;;
+	*)
+		echo "WTF ?"
+		;;
+esac
+
+

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+case $( echo -e "hybrid\nintel\nnvidia\nback" | dmenu -i -p "Change GPU ?" ) in
+	hybrid)
+		AnOMR switch hybrid
+		;;
+	intel)
+		AnOMR switch intel
+		;;
+	nvidia)
+		AnOMR switch nvidia
+		;;
+	back)
+		;;
+esac

@@ -1,0 +1,5 @@
+Section "Device"
+   Identifier "integrated"
+   Driver "modesetting"
+   BusID "PCI:0:2:0"
+EndSection

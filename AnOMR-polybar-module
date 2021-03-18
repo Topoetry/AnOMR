@@ -1,0 +1,6 @@
+[module/AnOMR]
+type = custom/script
+exec = AnOMR-polybar.sh
+click-right = AnOMR-dmenu
+interval = 86400
+
