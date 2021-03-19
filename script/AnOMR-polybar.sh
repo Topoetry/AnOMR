@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [[ -n $(AnOMR show|rg hybrid) ]]
 then
