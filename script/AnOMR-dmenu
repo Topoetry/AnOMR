@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/dash
 
-case $( echo -e "hybrid\nintel\nnvidia\nback" | dmenu -i -p "Change GPU ?" ) in
+case $( echo "hybrid\nintel\nnvidia\nback" | dmenu -i -p "Change GPU ?" ) in
 	hybrid)
 		AnOMR switch hybrid
 		;;
