@@ -3,10 +3,10 @@
 #                         / _ \ | '_ \| | | | |\/| | |_) |
 #                        / ___ \| | | | |_| | |  | |  _ < 
 #                       /_/   \_\_| |_|\___/|_|  |_|_| \_\
-if [[ -n $(acpi -a|rg on) ]]
+if [ -n "$(acpi -a|rg on)" ]
 then
 	leoptimus switch hybrid
-elif [[ -n $(acpi -a|rg off) ]]
+elif [ -n "$(acpi -a|rg off)" ]
 then
 	leoptimus switch intel
 fi
