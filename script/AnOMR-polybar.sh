@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/sh
 
 if [ -n "$(leoptimus show|rg hybrid)" ]
 then
