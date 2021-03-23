@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/sh
 
 case $( echo "hybrid\nintel\nnvidia\nback" | dmenu -i -p "Change GPU ?" ) in
 	hybrid)
