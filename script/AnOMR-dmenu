@@ -2,13 +2,13 @@
 
 case $( echo "hybrid\nintel\nnvidia\nback" | dmenu -i -p "Change GPU ?" ) in
 	hybrid)
-		AnOMR switch hybrid
+		sudo AnOMR switch hybrid
 		;;
 	intel)
-		AnOMR switch intel
+		sudo AnOMR switch intel
 		;;
 	nvidia)
-		AnOMR switch nvidia
+		sudo AnOMR switch nvidia
 		;;
 	back)
 		;;
