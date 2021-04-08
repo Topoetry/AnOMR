@@ -5,8 +5,8 @@
 #                       /_/   \_\_| |_|\___/|_|  |_|_| \_\
 if [ -n "$(acpi -a|rg on)" ]
 then
-	leoptimus switch hybrid
+	AnOMR switch hybrid
 elif [ -n "$(acpi -a|rg off)" ]
 then
-	leoptimus switch intel
+	AnOMR switch intel
 fi
